@@ -1,0 +1,133 @@
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, #888888, #8a00ff, #b763ff, #00f0ff);
+}
+
+h1 {
+    margin-bottom: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+}
+
+.container {
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: #555b6e;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px 40px;
+}
+
+#newTask {
+    background-color: #ffffff;
+    padding: 30px 20px;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+#newTask input {
+    width: 70%;
+    height: 45%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    border: 2px solid #d1d3d4;
+    padding: 12px;
+    color: #111111;
+    font-weight: 500;
+    position: relative;
+    border-radius: 5px;
+}
+
+#newTask input:focus {
+    outline: none;
+    border-color: #44255f;
+}
+
+#newTask button {
+    position: relative;
+    float: right;
+    width: 20%;
+    height: 45px;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-family: 500;
+    font-size: 16px;
+    background-color: #d1d3d4;
+    border: none;
+    color: #30004A;
+    cursor: pointer;
+}
+#newTask button:hover {
+    background-color: #6d6b6b;
+}
+
+#tasks {
+    background-color: #ffffff;
+    padding: 30px 20px;
+    margin-top: 60px;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    position: relative;
+}
+
+.task {
+    background-color: #fafafa;
+    height: 50px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #d1d4d4;
+    cursor: pointer;
+}
+
+.task span {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.task button {
+    background-color: #d1d3d4;
+    color: #30004A;
+    height: 100%;
+    width: 40px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+/* media query small svreen */
+@media only screen and (max-width: 768px) {
+    h1{
+        font-size: 2rem;
+    }
+    .container {
+        width: 80%;
+    }
+
+    #newTask input {
+        width: 80%;
+    }
+}
